@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PopFlic - Streaming Interativo com Inteligência Artificial</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('popflick-filmes-interativos.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 60vh;
+            margin: 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: transparent;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            flex-basis: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature h2 {
+            font-size: 1.5em;
+            color: #ffdd57;
+        }
+
+        .slider {
+            width: 100%;
+            height: 300px; /* Reduzido para dispositivos móveis */
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 6s infinite;
+        }
+
+        .slides img {
+            width: 33.3333%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+
+            33% {
+                transform: translateX(-33.3333%);
+            }
+
+            66% {
+                transform: translateX(-66.6666%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-top: 1px solid #333;
+        }
+
+        .plan {
+            flex-basis: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            background-color: #333;
+        }
+
+        .plan h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #ffdd57;
+        }
+
+        .plan p {
+            font-size: 1em;
+            color: #ccc;
+        }
+
+        .plan .price {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 40vh; /* Reduz a altura do header em telas menores */
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .feature {
+                flex-basis: 100%; /* Ocupa 100% da largura em dispositivos móveis */
+            }
+
+            .plans {
+                flex-direction: column; /* Torna as colunas de planos verticais em dispositivos móveis */
+            }
+
+            .plan {
+                flex-basis: 80%; /* Reduz a largura dos planos */
+                margin-bottom: 20px;
+            }
+
+            .slider {
+                height: 200px; /* Ajusta o tamanho do slider em dispositivos móveis */
+            }
+
+            h2 {
+                font-size: 1.2em; /* Reduz o tamanho dos títulos em dispositivos menores */
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Conteúdo no header -->
+        </div>
+    </header>
+
+    <div class="content">
+        <h2>Experimente uma Nova Forma de Assistir</h2>
+        <p>Escolha roupas, caminhos, pares românticos, explore viagens espaciais, volte no tempo e viva pura adrenalina com nossa tecnologia de IA!</p>
+
+        <div class="features">
+            <div class="feature">
+                <h2>Personalize o Visual</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="visual1.jpg" alt="Visual 1">
+                        <img src="visual2.jpg" alt="Visual 2">
+                        <img src="visual3.jpg" alt="Visual 3">
+                    </div>
+                </div>
+                <p>Veja suas escolhas de roupas ganharem vida nos personagens!</p>
+            </div>
+
+            <div class="feature">
+                <h2>Decida o Destino</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="destino1.jpg" alt="Destino 1">
+                        <img src="destino2.jpg" alt="Destino 2">
+                        <img src="destino3.jpg" alt="Destino 3">
+                    </div>
+                </div>
+                <p>Você decide o rumo da história! Faça escolhas e mude o caminho dos personagens.</p>
+            </div>
+
+            <div class="feature">
+                <h2>Escolha o Par Romântico</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="romantico1.jpg" alt="Romântico 1">
+                        <img src="romantico2.jpg" alt="Romântico 2">
+                        <img src="romantico3.jpg" alt="Romântico 3">
+                    </div>
+                </div>
+                <p>Crie histórias de amor únicas, selecionando os pares românticos dos personagens!</p>
+            </div>
+        </div>
+
+        <div class="section-title">Conheça nossos planos</div>
+
+        <div class="plans">
+            <div class="plan">
+                <h3>Grátis</h3>
+                <p>Filmes/séries com comerciais, limitação nas interações - 5 por dia.</p>
+                <div class="price">R$ 0,00</div>
+            </div>
+
+            <div class="plan">
+                <h3>Pop+</h3>
+                <p>Filmes/séries sem comerciais, interações ilimitadas.</p>
+                <div class="price">R$ 19,90/mês</div>
+            </div>
+
+            <div class="plan">
+                <h3>PopMax</h3>
+                <p>Filmes/séries sem comerciais, interações ilimitadas, conteúdo exclusivo.</p>
+                <div class="price">R$ 29,90/mês</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

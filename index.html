@@ -17,12 +17,14 @@
 
         header {
             background-image: url('popflick-filmes-interativos.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-size: contain; /* Ajusta a imagem para ser contida dentro do header */
+            background-position: center top; /* Centraliza a imagem no topo */
+            background-repeat: no-repeat; /* Não repete a imagem */
             width: 100%;
-            height: 60vh;
+            height: auto; /* Ajusta a altura automaticamente */
+            min-height: 30vh; /* Garante uma altura mínima para o header */
             margin: 0;
+            padding: 0;
         }
 
         .header-content {
@@ -46,6 +48,7 @@
 
         h2 {
             color: #fff;
+            margin-top: 10px; /* Espaço pequeno entre o cabeçalho e o texto */
         }
 
         .features {
@@ -157,7 +160,7 @@
 
         @media (max-width: 768px) {
             header {
-                height: 40vh;
+                min-height: 25vh; /* Altura mínima menor para dispositivos móveis */
             }
 
             .feature {
@@ -258,29 +261,28 @@
                         <img src="adrenalina3.jpg" alt="Adrenalina 3">
                     </div>
                 </div>
-                <p>Participe de cenas eletrizantes onde cada segundo conta!</p>
+                <p>Sinta a emoção e a adrenalina em cada escolha que você faz!</p>
             </div>
         </div>
 
-        <div class="section-title">Conheça nossos planos</div>
-
+        <h2 class="section-title">Nossos Planos</h2>
         <div class="plans">
             <div class="plan">
-                <h3>Grátis</h3>
-                <p>Filmes/séries com comerciais, limitação nas interações - 5 por dia.</p>
-                <div class="price">R$ 0,00</div>
+                <h3>Gratis</h3>
+                <p class="price">R$ 0,00</p>
+                <p>Filmes/séries com comerciais, limitação nas interações - 5 por dia</p>
             </div>
 
             <div class="plan">
                 <h3>Pop+</h3>
+                <p class="price">R$ 19,90/mês</p>
                 <p>Sem anúncios, interações ilimitadas para você se divertir com seus amigos e familiares. Além disso, scaneie sua face e seja um personagem.</p>
-                <div class="price">R$ 29,90/mês</div>
             </div>
 
             <div class="plan">
-                <h3>Pop Premium</h3>
+                <h3>PopPremium</h3>
+                <p class="price">R$ 39,90/mês</p>
                 <p>Sem anúncios, interações ilimitadas, escaneamento facial e utilização do modo em primeira pessoa com uso de óculos de realidade virtual.</p>
-                <div class="price">R$ 59,90/mês</div>
             </div>
         </div>
     </div>
